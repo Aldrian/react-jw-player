@@ -9,6 +9,7 @@ function getPlayerOpts(opts) {
     isMuted,
     licenseKey,
     playlist,
+    title
   } = opts;
 
   const hasAdvertising = !!generatePrerollUrl;
@@ -47,6 +48,10 @@ function getPlayerOpts(opts) {
 
   if (image) {
     playerOpts.image = image;
+  }
+
+  if (title) {
+    playerOpts.title = title;
   }
 
   return Object.assign(playerOpts, customProps);

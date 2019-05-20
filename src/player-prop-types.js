@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
   aspectRatio: PropTypes.string,
+  title: PropTypes.string,
   className: PropTypes.string,
   customProps: PropTypes.object,
   file: PropTypes.string,
